@@ -31,8 +31,8 @@ const projects = [
     id: 4,
     proName: "Bongo.",
     proDisc: "A Furniture Site , created with raw html , css , js",
-    ProLink: "http://lll",
-    ProImg: "assets/imgs/mockups/1.png",
+    ProLink: `${defaultLink}`,
+    ProImg: `${defaultMockup}`,
     OL: `${OL_IMG}`,
   },
   {
