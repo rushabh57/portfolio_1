@@ -191,16 +191,16 @@ Ham_tl.to(".line1", {
     "-=.5"
   );
 Ham_tl.paused(true);
-const  body = document.body;
 const hamMenuBtn = document.querySelector(".hb");
 const HB = document.querySelector(".hb-container");
 let hamMenuBtnClick = false;
+const body = document.body;
 hamMenuBtn.addEventListener("click", () => {
   if (!hamMenuBtnClick) {
     hamMenuBtnClick = true;
     Ham_tl.play();
     HB.classList.add('mobileFix');
-    body.style.overflowY = "hidden";
+    body.style.overflow = "hidden"; // Disable scrolling
     gsap.to(".navLinks", {
       bottom: 0,
       ease: "power3.inOut",
@@ -210,7 +210,7 @@ hamMenuBtn.addEventListener("click", () => {
   } else {
     hamMenuBtnClick = false;
     HB.classList.remove('mobileFix');
-    body.style.overflowY = "scroll";
+    body.style.overflow = "scroll";
     Ham_tl.reverse(1);
     gsap.to(".navLinks", {
       duration: 0.7,
