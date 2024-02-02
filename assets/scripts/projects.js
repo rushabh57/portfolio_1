@@ -9,6 +9,7 @@ const projects = [
     ProLink: "https://rushabh57.github.io/youtubeClone/",
     ProImg: "assets/imgs/mockups/youtubeClone.png",
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const projects = [
     ProLink: "https://rushabh57.github.io/giggleCO./",
     ProImg: "assets/imgs/mockups/giggleCo.png",
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const projects = [
     ProLink: "https://rushabh57.github.io/OnePage_PacificRim/",
     ProImg: "assets/imgs/mockups/pacficONE_PAGE.png",
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const projects = [
     ProLink: `https://rushabh57.github.io/Bongo_Co./`,
     ProImg: `assets/imgs/mockups/Bongo.png`,
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 5,
@@ -42,6 +46,7 @@ const projects = [
     ProLink: "https://rushabh57.github.io/lifeOcean/",
     ProImg: "assets/imgs/mockups/lifeocean.png",
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 6,
@@ -50,6 +55,7 @@ const projects = [
     ProLink: "https://rushabh57.github.io/weatherApp/",
     ProImg: "assets/imgs/mockups/weatherApp.png",
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 7,
@@ -58,14 +64,16 @@ const projects = [
     ProLink: "https://rushabh57.github.io/racipeApp/",
     ProImg: "assets/imgs/mockups/racipeApp.png",
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 8,
     proName: "Meesho Clone.",
     proDisc: "Better Messho Clone With some new fetures.",
-    ProLink: `${defaultLink}`,
-    ProImg: `${defaultMockup}`,
+    ProLink: `https://meesho-clone-0.vercel.app/`,
+    ProImg: `assets/imgs/mockups/meesho.png`,
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 9,
@@ -74,6 +82,7 @@ const projects = [
     ProLink: "https://notekeeper-kappa.vercel.app/",
     ProImg: `assets/imgs/mockups/notekeeper1.png`,
     OL: `${OL_IMG}`,
+    lang:`js`,
   },
   {
     id: 10,
@@ -82,6 +91,16 @@ const projects = [
     ProLink: `${defaultLink}`,
     ProImg: `${defaultMockup}`,
     OL: `${OL_IMG}`,
+    lang:`js`,
+  },
+  {
+    id: 11,
+    proName: "Skyveil",
+    proDisc: "Skyveil is WeatherForcast app. made with html css js",
+    ProLink: `https://rushabh57.github.io/weather2.0/`,
+    ProImg: `assets/imgs/mockups/skyveil.png`,
+    OL: `${OL_IMG}`,
+    lang:`js`,
   },
 ];
 const proCardsContainer = document.querySelector(".pro-cards-container");
@@ -94,10 +113,11 @@ const projectsMy = [
 ];
 proCardsContainer.innerHTML = projectsMy
   .map((item) => {
-    var { id, proName, proDisc, ProLink, ProImg, OL } = item;
+    var { id, proName, proDisc, ProLink, ProImg, OL , lang } = item;
     return `<div class="pro-card">
       <div class="pro-img">
           <img src="${ProImg}" alt="${id}">
+            <label for="" class='buildLang' >${lang}</label>
       </div>
       <div class="pro-full-info">
           <div class="pro-info">
