@@ -809,6 +809,21 @@ nav {
     height: 100%;
     width: 100%;
 }
+.pro-img .buildLang {
+  position: absolute;
+  background: var(--prime);
+  padding: 0.1em 0.5em;
+  border-radius: 0.25em;
+  right: 5px;
+  bottom: -55px;
+  font-family: var(--font-familyPoppins);
+  height: fit-content;
+  width: fit-content;
+  transition: var(--d) bottom cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.pro-card:hover .pro-img .buildLang {
+  bottom: 5px;
+}
 
 .pro-full-info {
     display: flex;
